@@ -1,183 +1,183 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карта киберугроз для школьника</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карта киберугроз для школьника</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1><i class="fas fa-shield-alt"></i> Карта киберугроз для школьника</h1>
-            <p class="subtitle">Интерактивный гид по цифровой безопасности</p>
-        </header>
+<div class="container">
+<header class="header">
+<h1><i class="fas fa-shield-alt"></i> Карта киберугроз для школьника</h1>
+<p class="subtitle">Интерактивный гид по цифровой безопасности</p>
+</header>
 
-        <main class="main-content">
-            <div class="intro">
-                <p>Нажмите на любую иконку на карте, чтобы узнать об угрозе и способах защиты</p>
-                <div class="stats">
-                    <span class="stat-item"><i class="fas fa-exclamation-triangle"></i> Актуальных угроз: <span id="threat-count">8</span></span>
-                    <span class="stat-item"><i class="fas fa-user-graduate"></i> Уровень: начинающий</span>
-                </div>
-            </div>
+<main class="main-content">
+<div class="intro">
+<p>Нажмите на любую иконку на карте, чтобы узнать об угрозе и способах защиты</p>
+<div class="stats">
+<span class="stat-item"><i class="fas fa-exclamation-triangle"></i> Актуальных угроз: <span id="threat-count">8</span></span>
+<span class="stat-item"><i class="fas fa-user-graduate"></i> Уровень: начинающий</span>
+</div>
+</div>
 
-            <!-- Интерактивная карта угроз -->
-            <div class="threats-map">
-                <!-- Угроза 1: Фишинг -->
-                <div class="threat-node" data-id="1" style="top: 15%; left: 20%;">
-                    <div class="node-icon phishing">
-                        <i class="fas fa-fish"></i>
-                    </div>
-                    <div class="node-label">Фишинг</div>
-                </div>
+<!-- Интерактивная карта угроз -->
+<div class="threats-map">
+<!-- Угроза 1: Фишинг -->
+<div class="threat-node" data-id="1" style="top: 15%; left: 20%;">
+<div class="node-icon phishing">
+<i class="fas fa-fish"></i>
+</div>
+<div class="node-label">Фишинг</div>
+</div>
 
-                <!-- Угроза 2: Слабые пароли -->
-                <div class="threat-node" data-id="2" style="top: 40%; left: 10%;">
-                    <div class="node-icon password">
-                        <i class="fas fa-key"></i>
-                    </div>
-                    <div class="node-label">Слабые пароли</div>
-                </div>
+<!-- Угроза 2: Слабые пароли -->
+<div class="threat-node" data-id="2" style="top: 40%; left: 10%;">
+<div class="node-icon password">
+<i class="fas fa-key"></i>
+</div>
+<div class="node-label">Слабые пароли</div>
+</div>
 
-                <!-- Угроза 3: Соцсети -->
-                <div class="threat-node" data-id="3" style="top: 30%; left: 40%;">
-                    <div class="node-icon social">
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                    <div class="node-label">Соцсети</div>
-                </div>
+<!-- Угроза 3: Соцсети -->
+<div class="threat-node" data-id="3" style="top: 30%; left: 40%;">
+<div class="node-icon social">
+<i class="fas fa-share-alt"></i>
+</div>
+<div class="node-label">Соцсети</div>
+</div>
 
-                <!-- Угроза 4: Игры -->
-                <div class="threat-node" data-id="4" style="top: 60%; left: 30%;">
-                    <div class="node-icon games">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="node-label">Игры</div>
-                </div>
+<!-- Угроза 4: Игры -->
+<div class="threat-node" data-id="4" style="top: 60%; left: 30%;">
+<div class="node-icon games">
+<i class="fas fa-gamepad"></i>
+</div>
+<div class="node-label">Игры</div>
+</div>
 
-                <!-- Угроза 5: Wi-Fi -->
-                <div class="threat-node" data-id="5" style="top: 20%; left: 70%;">
-                    <div class="node-icon wifi">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <div class="node-label">Общественный Wi-Fi</div>
-                </div>
+<!-- Угроза 5: Wi-Fi -->
+<div class="threat-node" data-id="5" style="top: 20%; left: 70%;">
+<div class="node-icon wifi">
+<i class="fas fa-wifi"></i>
+</div>
+<div class="node-label">Общественный Wi-Fi</div>
+</div>
 
-                <!-- Угроза 6: Мобильные приложения -->
-                <div class="threat-node" data-id="6" style="top: 50%; left: 60%;">
-                    <div class="node-icon mobile">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
+<!-- Угроза 6: Мобильные приложения -->
+<div class="threat-node" data-id="6" style="top: 50%; left: 60%;">
+<div class="node-icon mobile">
+<i class="fas fa-mobile-alt"></i>
+</div>
 <div class="node-label">Мобильные приложения</div>
-                </div>
+</div>
 
-                <!-- Угроза 7: Кибербуллинг -->
-                <div class="threat-node" data-id="7" style="top: 75%; left: 50%;">
-                    <div class="node-icon bullying">
-                        <i class="fas fa-comment-slash"></i>
-                    </div>
-                    <div class="node-label">Кибербуллинг</div>
-                </div>
+<!-- Угроза 7: Кибербуллинг -->
+<div class="threat-node" data-id="7" style="top: 75%; left: 50%;">
+<div class="node-icon bullying">
+<i class="fas fa-comment-slash"></i>
+</div>
+<div class="node-label">Кибербуллинг</div>
+</div>
 
-                <!-- Угроза 8: Вирусы -->
-                <div class="threat-node" data-id="8" style="top: 65%; left: 80%;">
-                    <div class="node-icon virus">
-                        <i class="fas fa-virus"></i>
-                    </div>
-                    <div class="node-label">Вредоносное ПО</div>
-                </div>
+<!-- Угроза 8: Вирусы -->
+<div class="threat-node" data-id="8" style="top: 65%; left: 80%;">
+<div class="node-icon virus">
+<i class="fas fa-virus"></i>
+</div>
+<div class="node-label">Вредоносное ПО</div>
+</div>
 
-                <!-- Центральный элемент -->
-                <div class="center-node">
-                    <div class="node-icon center">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="node-label">Цифровой профиль школьника</div>
-                </div>
+<!-- Центральный элемент -->
+<div class="center-node">
+<div class="node-icon center">
+<i class="fas fa-user"></i>
+</div>
+<div class="node-label">Цифровой профиль школьника</div>
+</div>
 
-                <!-- Соединительные линии (визуально) -->
-                <svg class="connections" width="100%" height="100%">
-                    <!-- Линии будут добавляться JavaScript -->
-                </svg>
-            </div>
+<!-- Соединительные линии (визуально) -->
+<svg class="connections" width="100%" height="100%">
+<!-- Линии будут добавляться JavaScript -->
+</svg>
+</div>
 
-            <!-- Панель деталей угрозы -->
-            <div class="threat-details" id="threatDetails">
-                <div class="details-header">
-                    <h2 id="threatTitle">Выберите угрозу на карте</h2>
-                    <button class="close-btn" id="closeDetails">&times;</button>
-                </div>
+<!-- Панель деталей угрозы -->
+<div class="threat-details" id="threatDetails">
+<div class="details-header">
+<h2 id="threatTitle">Выберите угрозу на карте</h2>
+<button class="close-btn" id="closeDetails">&times;</button>
+</div>
 
-                <div class="details-content">
-                    <div class="threat-icon-large" id="threatIcon">
-                        <i class="fas fa-question"></i>
-                    </div>
+<div class="details-content">
+<div class="threat-icon-large" id="threatIcon">
+<i class="fas fa-question"></i>
+</div>
 
-                    <div class="info-section">
-                        <h3><i class="fas fa-info-circle"></i> Описание</h3>
-                        <p id="threatDescription">Нажмите на одну из иконок на карте, чтобы увидеть описание угрозы.</p>
-                    </div>
+<div class="info-section">
+<h3><i class="fas fa-info-circle"></i> Описание</h3>
+<p id="threatDescription">Нажмите на одну из иконок на карте, чтобы увидеть описание угрозы.</p>
+</div>
 
-                    <div class="info-section">
-                        <h3><i class="fas fa-user-shield"></i> Как защититься?</h3>
-                        <ul id="threatProtection">
-                            <li>Выберите угрозу для просмотра рекомендаций</li>
-                        </ul>
-                    </div>
+<div class="info-section">
+<h3><i class="fas fa-user-shield"></i> Как защититься?</h3>
+<ul id="threatProtection">
+<li>Выберите угрозу для просмотра рекомендаций</li>
+</ul>
+</div>
 
-                    <div class="info-section">
-                        <h3><i class="fas fa-exclamation-circle"></i> Пример из жизни</h3>
-                        <p id="threatExample">Пример появится после выбора угрозы.</p>
-                    </div>
+<div class="info-section">
+<h3><i class="fas fa-exclamation-circle"></i> Пример из жизни</h3>
+<p id="threatExample">Пример появится после выбора угрозы.</p>
+</div>
 
-                    <div class="info-section">
-                        <h3><i class="fas fa-clipboard-check"></i> Чек-лист безопасности</h3>
-                        <div class="checklist" id="threatChecklist">
-                            <div class="checklist-item">
-                                <input type="checkbox" id="check1" disabled>
-                                <label for="check1">Выберите угрозу для активации чек-листа</label>
-                            </div>
-                        </div>
-                    </div>
+<div class="info-section">
+<h3><i class="fas fa-clipboard-check"></i> Чек-лист безопасности</h3>
+<div class="checklist" id="threatChecklist">
+<div class="checklist-item">
+<input type="checkbox" id="check1" disabled>
+<label for="check1">Выберите угрозу для активации чек-листа</label>
+</div>
+</div>
+</div>
 
-                    <div class="quiz-section" id="quizSection">
-                        <h3><i class="fas fa-brain"></i> Мини-тест</h3>
-                        <p id="quizQuestion">Вопрос появится после выбора угрозы</p>
-                        <div class="quiz-options">
-                            <button class="quiz-option" data-correct="false">Вариант 1</button>
-                            <button class="quiz-option" data-correct="true">Вариант 2</button>
-                        </div>
-                        <p class="quiz-feedback" id="quizFeedback"></p>
-                    </div>
-                </div>
-            </div>
+<div class="quiz-section" id="quizSection">
+<h3><i class="fas fa-brain"></i> Мини-тест</h3>
+<p id="quizQuestion">Вопрос появится после выбора угрозы</p>
+<div class="quiz-options">
+<button class="quiz-option" data-correct="false">Вариант 1</button>
+<button class="quiz-option" data-correct="true">Вариант 2</button>
+</div>
+<p class="quiz-feedback" id="quizFeedback"></p>
+</div>
+</div>
+</div>
 
-            <!-- Блок статистики -->
-            <div class="stats-block">
+<!-- Блок статистики -->
+<div class="stats-block">
 <h3><i class="fas fa-chart-line"></i> Статистика безопасности</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-value" id="completedChecks">0</div>
-                        <div class="stat-label">Выполнено пунктов чек-листа</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="learnedThreats">0</div>
-                        <div class="stat-label">Изучено угроз</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="quizScore">0%</div>
-                        <div class="stat-label">Результат тестов</div>
-                    </div>
-                </div>
-            </div>
-        </main>
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-value" id="completedChecks">0</div>
+<div class="stat-label">Выполнено пунктов чек-листа</div>
+</div>
+<div class="stat-card">
+<div class="stat-value" id="learnedThreats">0</div>
+<div class="stat-label">Изучено угроз</div>
+</div>
+<div class="stat-card">
+<div class="stat-value" id="quizScore">0%</div>
+<div class="stat-label">Результат тестов</div>
+</div>
+</div>
+</div>
+</main>
 
 
-    <script src="script.js"></script>
-    </div>
+<script src="script.js"></script>
 </body>
 </html>
+
